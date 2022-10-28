@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@424&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Menu */
+
+/* Slide */
+
+#radio1{
+    display: none;
+}#radio2{
+    display: none;
+}#radio3{
+    display: none;
+}
+
+
+.bar-menu {
+    
+    background-color: rgba(0, 0, 0, 0.367);
+
+    height: 60px;
+    position: relative;
+    display: flex;
+}
+
+.bar-menu2 {
+    
+    background-color: rgb(0, 0, 0);
+
+    height: 60px;
+    position: relative;
+    display: flex;
+}
+
+.logo{
+
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.options {
+
+    display: flex;
+    color: rgb(231, 231, 231);
+    font-size: 15px;
+    margin-left: 67%;
+    list-style: none;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+li {
+    padding: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(231, 231, 231);
+    transition: .6s;
+}a:hover{
+    
+    color: rgb(255, 255, 255);
+}
+
+.bar {
+    width: 3px;
+    height: 30px;
+    background-color: aliceblue;
+    margin-top: 5px;
+    border-radius: 3rem;
+}
+
+.text-menu {
+
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: -10%;
+    font-size: 50px;
+    position: absolute;
+    text-align: center;
+    margin-top: 200px;
+    
+}
+
+.slider {
+    height: 700px;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    margin-top: -10%;
+    box-shadow: 0 0 20px 0 black;
+    justify-content: center;
+}
+
+.img-menu {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.main {
+    width: 90%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+}
+
+.main1 {
+
+    width: 400px;
+    height: 300px;
+    margin-left: 100px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font: 900;
+}
+.main2 {
+
+    width: 400px;
+    height: 300px;
+    margin-left: 200px;
+    border-radius: 3rem;
+    box-shadow: 0 0 20px 0 black;
+    overflow: hidden;
+
+}
+
+.img-main {
+
+    height: 100%;
+    width: 110%;
+    display: flex;
+}
+
+.h-product {
+
+    text-align: center;
+    margin-top: 60px;
+}
+
+.some-products {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 200px;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px 0 black;
+}
+
+footer {
+
+    width: 100%;
+    height: 200px;
+    background-color: rgb(38, 38, 38);
+    color: aliceblue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fh {
+
+    margin-top: -10px;
+    font-size: 12px;
+}
+
+.fh1 {
+
+    display: flex;
+    margin-left: 37%;
+    font-size: 12px;
+}
+
+.fh2{
+
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-left: 45%;
+}
+
+
+.img3 {
+
+    width: 60px;
+    height: 60px;
+    margin-top: -9px;
+}
+
+.img1 {
+
+    width: 50px;
+    height: 50px;
+    margin-top: -9px;
+}
+
+/* Page Registration */
+
+.body-regist {
+
+    background: linear-gradient(100deg, #b1e8c6, #91ffa2, #58cf62, #43ff6c);
+    animation: body-anime 100s ease-in-out infinite;
+    background-image: url(/img/desfocado.jpg);
+}
+
+@keyframes body-anime {
+
+    0% {
+        background-position: 0% 50%;
+    }50%{
+        background-position: 100% 50%;
+    }100%{
+        background-position: 0% 50%;
+    }
+
+}
+
+.div-regist {
+    display: flex;
+    width: 400px;
+    height: 600px;
+    box-shadow: 0 0 20px 0 black;
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.343);
+}
+
+.h1-regist {
+    color: aliceblue;
+    margin-top: -200px;
+}
+
+.label-name {
+    color: aliceblue;
+    margin-left: -50px;
+}
+
+.input-name {
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    width: 250px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.label-email {
+    color: aliceblue;
+    margin-left: -50px;
+    margin-top: 20px;
+}
+
+.input-email {
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    width: 250px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.label-password {
+    color: aliceblue;
+    margin-left: -50px;
+    margin-top: 20px;
+}
+
+.input-password {
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    width: 250px;
+    height: 30px;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.btn-regist {
+    width: 180px;
+    height: 40px;
+    margin-top: 50px;
+    margin-left: 45px;
+    border-radius: 3rem;
+    border: none;
+    color: rgb(17, 17, 17);
+    background-color: rgb(245, 248, 245);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .6s;
+    cursor: pointer;
+}.btn-regist:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.each-regist {
+    background-color: rgba(162, 18, 18, 0.704);
+    width: 140px;
+    border-radius: 3rem;
+    text-align: center;
+    color: rgba(240, 248, 255);
+    font-family: 'Montserrat', sans-serif;
+    margin: .5%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: each-regist .10s ease-out alternate;
+}
+
+@keyframes each-regist {
+    0% {
+        margin-left: 1%;
+        background-color: rgba(219, 72, 72, 0);
+        color: rgba(240, 248, 255, 0);
+   }
+   50%{
+    margin-left: 20%;
+    background-color: rgba(219, 72, 72, 0);
+    color: rgba(240, 248, 255, 0);
+   }
+   100%{
+    margin-left: 45%;
+    background-color: rgba(219, 72, 72);
+    color: rgba(240, 248, 255);
+   }
+}
+
+.msg-home {
+
+    margin-top: 50px;
+    width: 650px;
+    background-color: #00d92fa8;
+    border-radius: 3rem;
+    font-size: 40px;
+    box-shadow: 0 0 20px 0 black;
+}
+
+.a_name {
+
+    background-color: #05f83a;
+    width: 100px;
+    text-align: right;
+}
+
+.div_account {
+    width: 400px;
+    height: 600px;
+    box-shadow: 0 0 20px 0 black;
+    border-radius: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, 0.343);
+    color: aliceblue;
+    font-size: 12px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.h1_account {
+
+    background-color: rgba(0, 0, 0, 0.343);
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 3rem;
+    width: 400px;
+    transition: .6s;
+
+}.h1_account:hover {
+
+    background-color: rgb(65, 65, 65);
+}
+.h2_account {
+
+    background-color: rgba(0, 0, 0, 0.343);
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 3rem;
+    width: 400px;
+    transition: .6s;
+
+}.h2_account:hover {
+
+    background-color: rgb(65, 65, 65);
+
+}
+
+.main_admin {
+    
+    width: 800px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+    text-align: center;
+    border-radius: 1rem;
+
+}
+
+.a_admin {
+
+    margin-top: 150px;
+
+}
+
+.a1_admin {
+
+    color: black;
+    background-color: rgb(0, 255, 64);
+    width: 10px;
+    height: 150px;
+    text-decoration: none;
+    font-size: 50px;
+    border-radius: 1rem;
+
+}
+.a2_admin {
+
+    color: black;
+    background-color: rgb(0, 255, 64);
+    width: 10px;
+    height: 150px;
+    text-decoration: none;
+    font-size: 50px;
+    border-radius: 1rem;
+
+
+}
+.a3_admin {
+
+    color: black;
+    background-color: rgb(0, 255, 64);
+    width: 10px;
+    height: 150px;
+    text-decoration: none;
+    font-size: 50px;
+    border-radius: 1rem;
+
+
+}
+
+.h1_admin {
+
+    font-size: 40px;
+    color: white;
+
+}
+
+.menu_add {
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+    width: 800px;
+    height: 500px;
+    border-radius: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.h1_add {
+
+    color: aliceblue;
+
+}
+
+.label1_manu {
+
+    font-size: 25px;
+    color: aliceblue;
+
+}
+
+.in1_menu {
+
+    outline: none;
+    width: 250px;
+    height: 25px;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 40px;
+
+
+}
+
+.label2_manu {
+
+    font-size: 25px;
+    color: aliceblue;
+
+}
+
+.in2_menu {
+
+    outline: none;
+    width: 250px;
+    height: 25px;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+    margin-left: 40px;
+
+}
+
+.label3_manu {
+
+    font-size: 25px;
+    color: aliceblue;
+
+}
+
+.in3_menu {
+
+    outline: none;
+    width: 250px;
+    height: 25px;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 30px;
+
+
+}
+
+
+.product_iten {
+
+    min-height: 120px;
+    min-width: 150px;
+    border: 1px solid black;
+    border-radius: .5rem;
+    margin: 10px;
+    transition: .6s;
+}.product_iten:hover {
+
+    background-color: rgb(134, 134, 134);
+}
+
+.products {
+
+    width: 100%;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-top: 100px;
+    border-top: 1px solid #000000;
+    background-color: #ffffff8a;
+    box-shadow:0 0 10px 0 #000000;
+}
+
+.products_home {
+
+    width: 100%;
+    display: flex;
+    text-align: center;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-top: 100px;
+
+}
+
+.h1_product {
+
+    text-align: center;
+}
+
+.search_products {
+
+    text-align: center;
+    margin-top: 50px;
+}
+
+.input_products {
+
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 2rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.button_products {
+
+    height: 30px;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    border-radius: 2rem;
+    background-color: #000000ae;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}.button_products:hover {
+
+    background-color: #858585;
+    color: rgb(21, 21, 21);
+}
+
+.h1_One {
+
+    background-color: #000000;
+    color: aliceblue;
+    text-align: center;
+}
+
+.page_edit {
+
+    background-color: #000000;
+    color: aliceblue;
+    text-align: center;
+}

@@ -1,0 +1,104 @@
+
+    <div class="bar-menu">
+
+        <div class="logo">
+            <a href="/"><h3 ><img src="/img/logo.png" alt="" style="width: 45px; margin-left: 30px; margin-top: -13px;"></h3></a>
+        </div>
+
+        <div class="options">
+            <a href="/products"><li>Produtos</li></a>
+            <a href="/admin"><li>Área Admin</li></a>
+            <h1 class="bar"></h1>
+            {{#if user}}
+
+                <a href="user/account"><li>Conta</li></a>
+                <a href="/user/logout"><li>Sair</li></a>
+
+
+            {{else}}
+                <a href="http://localhost:5050/user/registration"><li>Resgistrar</li></a>
+                <a href="/user/login"><li>Entrar</li></a>
+            {{/if}}
+
+        </div>
+    </div>
+    
+
+    </div>
+
+        <div class="slider">
+
+            <div class="img-menu"><img src="/img/slide3.jpg" alt=""></div>
+
+            <div class="text-menu">
+                <h1>NATURAL</h1>
+                <h5>A natureza está em todos nós</h5>
+                <div class="msg-home">{{>_msg}}</div>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br> 
+
+    <main class="main">
+
+        <div class="main1">
+            <h1>Quem somos nós</h1>
+            <p>A NATURAL, é uma loja especializada em produtos naturais com obra-prima totalmente natural, com os produtos com sua composição 100% orgânica, livre de químicos prejudiciais à saúde</p>
+        </div>
+
+        <div class="main2">
+            <img class="img-main" src="/img/frog.jpg" alt="">
+        </div>
+
+    </main>
+
+
+    <div class="product">
+
+        <h1 class="h-product">PRODUTOS</h1>
+
+        <div class="some-products">
+
+            <div class="products_home">
+                {{#each products}}
+                <a href="/products/{{_id}}">
+                <div class="product_iten" style="color: black;">
+                    <h4>{{name}}</h4>
+                    R$: {{price}}
+                    <input type="hidden" name="id" value="{{_id}}">
+                </div>
+                <br>
+                 {{/each}}
+                 </a>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <footer>
+
+        <div class="fh">
+            <br>
+            <li>©️ Natural Servise Company</li>
+        </div>
+
+        <div class="fh1">
+            <br>
+            <li>Entrar</li>
+            <li>Cadastrar</li>
+            <li>Termos de Serviso</li>
+            <li>Localição</li>
+        </div>
+
+        <h4>Social</h4>
+
+        <div class="fh2">
+            <a href="www.twiter"><img class="img1" src="/img/s1.png" alt="social"></a>
+            <a href="instagram_Natural"><img class="img3" src="/img/s3.png" alt="social"></a>
+        </div>
+
+    </footer>

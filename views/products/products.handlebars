@@ -1,0 +1,54 @@
+<body class="body-regist">
+
+
+
+<div class="bar-menu">
+
+        <div class="logo">
+            <a href="/"><h3 ><img src="/img/logo.png" alt="" style="width: 45px; margin-left: 30px; margin-top: -13px;"></h3></a>
+        </div>
+
+        <div class="options">
+            <a href="/products"><li>Produtos</li></a>
+            <a href="/admin"><li>Área Admin</li></a>
+            <h1 class="bar"></h1>
+            {{#if user}}
+
+                <a href="user/account"><li>Conta</li></a>
+                <a href="/user/logout"><li>Sair</li></a>
+
+
+            {{else}}
+                <a href="http://localhost:5050/user/registration"><li>Resgistrar</li></a>
+                <a href="/user/login"><li>Entrar</li></a>
+            {{/if}}
+
+        </div>
+    </div>
+
+<h1 class="h1_product">Todos os Produtos</h1>
+
+
+<form action="/products" class="search_products">
+
+    <label  for="">Pesquisar: </label>
+        <input class="input_products" type="text" name="name">
+    <button class="button_products" type="submit">Pesquisar</button>
+    
+</form>
+
+
+<div class="products">
+{{#each products}}
+    <a href="/products/{{_id}}">
+    <div class="product_iten" style="color: black;">
+        <h4>{{name}}</h4>
+        R$: {{price}}
+        <input type="hidden" name="id" value="{{_id}}">
+    </div>
+    <br>
+{{/each}}
+</div>
+
+
+</body>

@@ -1,0 +1,37 @@
+<div class="bar-menu2">
+
+        <div class="logo">
+            <a href="/"><h3 ><img src="/img/logo.png" alt="" style="width: 45px; margin-left: 30px; margin-top: -13px;"></h3></a>
+        </div>
+
+        <div class="options">
+            <a href="/products"><li>Produtos</li></a>
+            <a href="/admin"><li>Área Admin</li></a>
+            <h1 class="bar"></h1>
+            {{#if user}}
+
+                <a href="user/account"><li>Conta</li></a>
+                <a href="/user/logout"><li>Sair</li></a>
+
+
+            {{else}}
+                <a href="http://localhost:5050/user/registration"><li>Resgistrar</li></a>
+                <a href="/user/login"><li>Entrar</li></a>
+            {{/if}}
+
+        </div>
+</div>
+
+<main class="main_admin">
+
+    <h1 class="h1_admin">Área do Administrador</h1>
+
+    <div class="a_admin">
+
+    <a class="a1_admin" href="/admin/add">Adicionar um Protudo</a>
+    <br>
+    <br>
+    <a class="a2_admin" href="/admin/edit">Editar um Protudo</a>
+    </div>
+
+</main>

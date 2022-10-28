@@ -1,0 +1,53 @@
+<div class="bar-menu2">
+
+        <div class="logo">
+            <a href="/"><h3 ><img src="/img/logo.png" alt="" style="width: 45px; margin-left: 30px; margin-top: -13px;"></h3></a>
+        </div>
+
+        <div class="options">
+            <a href="/products"><li>Produtos</li></a>
+            <a href="/admin"><li>Área Admin</li></a>
+            <h1 class="bar"></h1>
+            {{#if user}}
+
+                <a href="user/account"><li>Conta</li></a>
+                <a href="/user/logout"><li>Sair</li></a>
+
+
+            {{else}}
+                <a href="http://localhost:5050/user/registration"><li>Resgistrar</li></a>
+                <a href="/user/login"><li>Entrar</li></a>
+            {{/if}}
+
+        </div>
+</div>
+
+
+<div class="menu_add">
+
+<form action="/admin/add" method="POST">
+
+    <h1 class="h1_add">Adicionar Produto</h1>
+
+    <div class="msg-home" style="margin-left:90px;">{{>_msg}}</div>
+
+    {{#each err}}
+    <div class="each-regist">{{text}}</div>
+    {{else}}
+    {{/each}}
+
+
+    <label for="" class="label1_manu">Nome do Produto:</label>
+        <input class="in1_menu" type="text" name="name">
+    <br>
+    <label class="label2_manu" for="">Preço do Produto :</label>
+        <input class="in2_menu" type="text" name="price">
+    <br>
+    <label  class="label3_manu" for="">Descrição do Produto:</label>
+        <input class="in3_menu" type="text" name="description">
+    <button class="btn-regist" style="margin-left:300px;" type="submit">Criar Produto</button>
+</form>
+
+</div>
+
+<a class="btn-regist" href="/admin" style="color: black;">Voltar</a>

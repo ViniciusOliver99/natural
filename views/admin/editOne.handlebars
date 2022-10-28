@@ -1,0 +1,27 @@
+<h1 class="h1_One">Editando o Produto: {{products.name}}</h1>
+
+<form action="/admin/edit" method="POST" class="menu_add">
+
+    <input  type="hidden" name="id" value="{{products._id}}">
+
+    <label class="label1_manu" style="margin-top: 100px;" for="name">Nome:</label>
+    <input class="in1_menu" type="text" name="name" value="{{products.name}}">
+
+    <br>
+
+    <label class="label2_manu" for="price">Preço:</label>
+    <input class="in2_menu" type="text" name="price" value="{{products.price}}">
+
+    <br>
+
+    <label class="label3_manu" for="description">Descrição:</label>
+    <input class="in3_menu" type="text" name="description" value="{{products.description}}">
+
+    <br>
+
+    <button class="btn-regist" type="submit">Editar</button>
+
+</form>
+
+
+<a class="btn-regist" href="/admin/edit" style="color: black;">Voltar</a>

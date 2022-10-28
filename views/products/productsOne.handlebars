@@ -1,0 +1,34 @@
+<body class="body-regist">
+
+<div class="bar-menu">
+
+        <div class="logo">
+            <a href="/"><h3 ><img src="/img/logo.png" alt="" style="width: 45px; margin-left: 30px; margin-top: -13px;"></h3></a>
+        </div>
+
+        <div class="options">
+            <a href="/products"><li>Produtos</li></a>
+            <a href="/admin"><li>Área Admin</li></a>
+            <h1 class="bar"></h1>
+            <a href="/"><li>Início</li></a>
+            <a href="/user/logout"><li>Sair</li></a>
+        </div>
+        
+</div>
+
+<div class="div_account" style="display:column;">
+    
+{{#if products}}
+<br>
+<h1 class="h1_account">{{products.name}}</h1>
+<br>
+<h1 class="h2_account">{{products.price}}</h1>
+<br>
+<h1 class="h2_account">{{products.description}}</h1>
+
+{{/if}}
+
+</div>
+
+
+</body>
