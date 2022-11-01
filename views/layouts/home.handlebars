@@ -26,7 +26,29 @@
 
         </div>
 
-        
+        <label class="container">
+            <input type="checkbox" id="check">
+            <span class="trace"></span>
+            <span class="trace"></span>
+            <span class="trace"></span>
+            <div class="page"></div>
+            <div class="big_trace"></div>
+            <div class="op_trace"><a href="/products"><li>Produtos</li></a></div>
+            <div class="op_trace"><a href="/admin"><li>Admin</li></a></div>
+            
+            {{#if user}}
+                <div class="op_trace3"><a href="user/account"><li>Conta</li></a></div>
+                <div class="op_trace4"><a href="/user/logout"><li>Sair</li></a></div>
+
+
+            {{else}}
+
+                <div class="op_trace3"><a href="/user/registration"><li>Resgistrar</li></a></div>
+                <div class="op_trace4"><a href="/user/login"><li>Entrar</li></a></div>
+                
+            {{/if}}
+
+        </label>
         
     </div>
     
@@ -99,7 +121,7 @@
             <li>Entrar</li>
             <li>Cadastrar</li>
             <li>Termos de Serviso</li>
-            <li>Localição</li>
+            <li>Localização</li>
         </div>
 
         <h4>Social</h4>
