@@ -6,9 +6,11 @@
         </div>
 
         <div class="options">
-            <a href="/products"><li>Produtos</li></a>
-            <a href="/admin"><li>Área Admin</li></a>
-            <h1 class="bar"></h1>
+            
+                <a href="/products"><li>Produtos</li></a>
+                <a href="/admin"><li>Área Admin</li></a>
+                <h1 class="bar"></h1>
+            
             {{#if user}}
 
                 <a href="user/account"><li>Conta</li></a>
@@ -16,11 +18,19 @@
 
 
             {{else}}
+
                 <a href="/user/registration"><li>Resgistrar</li></a>
                 <a href="/user/login"><li>Entrar</li></a>
+
             {{/if}}
 
         </div>
+
+        <label class="container">
+            <input type="checkbox" id="check">
+            <span class="checkmark">789</span>
+        </label>
+        
     </div>
     
 
@@ -44,8 +54,8 @@
     <main class="main">
 
         <div class="main1">
-            <h1>Quem somos nós</h1>
-            <p>A NATURAL, é uma loja especializada em produtos naturais com obra-prima totalmente natural, com os produtos com sua composição 100% orgânica, livre de químicos prejudiciais à saúde</p>
+            <h1 class="main1_h1">Quem somos nós ?</h1>
+            <p class="main1_p">A NATURAL, é uma loja especializada em produtos naturais com obra-prima totalmente natural, com os produtos com sua composição 100% orgânica, livre de químicos prejudiciais à saúde</p>
         </div>
 
         <div class="main2">
@@ -79,6 +89,7 @@
 
     <br>
     <br>
+    
     <footer>
 
         <div class="fh">
